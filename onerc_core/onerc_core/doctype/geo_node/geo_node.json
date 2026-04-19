@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "GEO.-.{geo_level}.-.{geo_name}",
+ "creation": "2026-04-19 09:04:48.125148",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_5vrw",
+  "lft",
+  "rgt",
+  "old_parent",
+  "column_break_kdix",
+  "section_break_ximj",
+  "geo_node_name",
+  "geo_level",
+  "geo_level_order",
+  "column_break_jybh",
+  "parent_geo_node",
+  "geo_code",
+  "is_group"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_5vrw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Geo Node"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "parent_geo_node",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Geo Node",
+   "mandatory_depends_on": "eval: doc.geo_level_order > 1",
+   "options": "Geo Node"
+  },
+  {
+   "fieldname": "section_break_ximj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "The actual name of the place eg. Nairobi, Kampala",
+   "fieldname": "geo_node_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Geo Node Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "geo_level",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Geo Level",
+   "options": "Geo Level",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "geo_code",
+   "fieldtype": "Data",
+   "label": "Geo Code"
+  },
+  {
+   "fieldname": "column_break_jybh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kdix",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "geo_level.level_order",
+   "fetch_if_empty": 1,
+   "fieldname": "geo_level_order",
+   "fieldtype": "Int",
+   "label": "Geo Level Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2026-04-19 14:04:42.661172",
+ "modified_by": "Administrator",
+ "module": "Onerc Core",
+ "name": "Geo Node",
+ "naming_rule": "Expression",
+ "nsm_parent_field": "parent_geo_node",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "geo_node_name"
+}

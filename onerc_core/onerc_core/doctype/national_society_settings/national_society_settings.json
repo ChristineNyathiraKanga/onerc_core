@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-26 08:47:59.492477",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "organization_identity_section",
+  "organization_name",
+  "organization_short_name",
+  "country",
+  "column_break_opck",
+  "primary_color",
+  "secondary_color",
+  "logo",
+  "terminology_section",
+  "volunteer_label",
+  "member_label",
+  "column_break_vngp",
+  "branch_label",
+  "region_label",
+  "geography_section",
+  "maximum_geographical_depth"
+ ],
+ "fields": [
+  {
+   "fieldname": "organization_identity_section",
+   "fieldtype": "Section Break",
+   "label": "Organization Identity"
+  },
+  {
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name"
+  },
+  {
+   "fieldname": "organization_short_name",
+   "fieldtype": "Data",
+   "label": "Organization Short Name"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "primary_color",
+   "fieldtype": "Color",
+   "label": "Primary Color"
+  },
+  {
+   "fieldname": "secondary_color",
+   "fieldtype": "Color",
+   "label": "Secondary Color"
+  },
+  {
+   "fieldname": "logo",
+   "fieldtype": "Attach Image",
+   "label": "Logo"
+  },
+  {
+   "fieldname": "terminology_section",
+   "fieldtype": "Section Break",
+   "label": "Terminology"
+  },
+  {
+   "fieldname": "volunteer_label",
+   "fieldtype": "Data",
+   "label": "Volunteer Label"
+  },
+  {
+   "fieldname": "member_label",
+   "fieldtype": "Data",
+   "label": "Member Label"
+  },
+  {
+   "fieldname": "branch_label",
+   "fieldtype": "Data",
+   "label": "Branch Label"
+  },
+  {
+   "fieldname": "region_label",
+   "fieldtype": "Data",
+   "label": "Region Label"
+  },
+  {
+   "fieldname": "geography_section",
+   "fieldtype": "Section Break",
+   "label": "Geography"
+  },
+  {
+   "fieldname": "maximum_geographical_depth",
+   "fieldtype": "Int",
+   "label": "Maximum Geo Depth"
+  },
+  {
+   "fieldname": "column_break_opck",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vngp",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-04-19 12:15:44.387408",
+ "modified_by": "Administrator",
+ "module": "Onerc Core",
+ "name": "National Society Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
