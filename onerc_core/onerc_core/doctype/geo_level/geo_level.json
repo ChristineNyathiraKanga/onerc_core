@@ -1,25 +1,21 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:level_key",
+ "autoname": "field:geo_level_key",
  "creation": "2026-03-26 08:55:15.239558",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "level_identity_section",
-  "level_name",
-  "level_key",
+  "geo_level_name",
+  "geo_level_key",
   "column_break_gxja",
-  "level_order",
+  "geo_level_order",
   "configuration_section",
   "is_lowest_level",
   "requires_parent",
-  "column_break_udej",
-  "allow_volunteers",
-  "allow_branches",
-  "status_section",
   "is_active",
-  "column_break_pcwx",
+  "column_break_udej",
   "description"
  ],
  "fields": [
@@ -29,27 +25,8 @@
    "label": "Level Identity"
   },
   {
-   "description": "eg. Region, County, District etc",
-   "fieldname": "level_name",
-   "fieldtype": "Data",
-   "label": "Level Name"
-  },
-  {
-   "description": "Abbreviation eg. Rgn, NBI etc",
-   "fieldname": "level_key",
-   "fieldtype": "Data",
-   "label": "Level Key",
-   "unique": 1
-  },
-  {
    "fieldname": "column_break_gxja",
    "fieldtype": "Column Break"
-  },
-  {
-   "description": "Start from 1 and proceed to 2, 3 etc. 1 is top of the hierarchy",
-   "fieldname": "level_order",
-   "fieldtype": "Int",
-   "label": "Level Order"
   },
   {
    "fieldname": "configuration_section",
@@ -74,41 +51,43 @@
   },
   {
    "default": "0",
-   "fieldname": "allow_volunteers",
-   "fieldtype": "Check",
-   "label": "Allow Volunteers"
-  },
-  {
-   "default": "0",
-   "fieldname": "allow_branches",
-   "fieldtype": "Check",
-   "label": "Allow Branches"
-  },
-  {
-   "fieldname": "status_section",
-   "fieldtype": "Section Break",
-   "label": "Status"
-  },
-  {
-   "default": "0",
    "fieldname": "is_active",
    "fieldtype": "Check",
    "label": "Is Active"
   },
   {
-   "fieldname": "column_break_pcwx",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
+  },
+  {
+   "description": "eg. Region, County, District etc",
+   "fieldname": "geo_level_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Geo Level Name",
+   "reqd": 1
+  },
+  {
+   "description": "Abbreviation eg. Rgn, NBI etc",
+   "fieldname": "geo_level_key",
+   "fieldtype": "Data",
+   "label": "Geo Level Key",
+   "unique": 1
+  },
+  {
+   "description": "Start from 1 and proceed to 2, 3 etc. 1 is top of the hierarchy",
+   "fieldname": "geo_level_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Geo Level Order",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-04-19 13:00:07.064365",
+ "modified": "2026-04-19 16:00:22.425577",
  "modified_by": "Administrator",
  "module": "Onerc Core",
  "name": "Geo Level",
@@ -132,9 +111,9 @@
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
  "show_title_field_in_link": 1,
- "sort_field": "level_order",
+ "sort_field": "geo_level_order",
  "sort_order": "ASC",
  "states": [],
- "title_field": "level_name",
+ "title_field": "geo_level_name",
  "track_changes": 1
 }
