@@ -27,16 +27,15 @@ frappe.ui.form.on("Feedback", {
 					},
 					({ reviewer_notes }) => {
 						frappe.call({
-							method: "onerc_core.feedback.api.update_feedback_status",
+							method: 'frappe.client.set_value',
 							args: {
+								doctype: 'Feedback',
 								name: frm.doc.name,
-								status: next_status,
-								reviewer_notes: reviewer_notes || null,
+								fieldname: 'status',
+								value: next_status
 							},
-							callback() {
-								frm.reload_doc();
-							},
-						});
+							callback() { frm.reload_doc(); }
+							});
 					},
 					__("Update Status"),
 					__(label)

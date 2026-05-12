@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
- "autoname": "FAQ-.{category}.-.#####",
+ "autoname": "naming_series:naming_series",
  "creation": "2026-05-11 13:33:04.389005",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -13,6 +13,7 @@
   "sort_order",
   "organization",
   "published_on",
+  "naming_series",
   "content_section",
   "answer",
   "stats_section",
@@ -50,7 +51,6 @@
    "reqd": 1
   },
   {
-   "default": "0",
    "fieldname": "sort_order",
    "fieldtype": "Int",
    "label": "Sort Order",
@@ -76,8 +76,7 @@
   {
    "fieldname": "answer",
    "fieldtype": "Text Editor",
-   "label": "Answer",
-   "reqd": 1
+   "label": "Answer"
   },
   {
    "collapsible": 1,
@@ -109,16 +108,23 @@
    "in_standard_filter": 1,
    "label": "Organization",
    "options": "Company"
+  },
+  {
+   "default": "FAQ-.category.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming Series"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-11 17:15:34.224727",
+ "modified": "2026-05-12 09:13:23.625611",
  "modified_by": "Administrator",
  "module": "FAQ",
  "name": "FAQ",
- "naming_rule": "Expression",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

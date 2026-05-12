@@ -1,10 +1,11 @@
 {
  "actions": [],
- "autoname": "FDB-.{feedback_type}.-.#####",
+ "autoname": "naming_series:naming_series",
  "creation": "2026-05-11 15:35:41.995057",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "subject",
   "status",
   "column_break_top",
@@ -128,11 +129,18 @@
    "fieldname": "full_name",
    "fieldtype": "Data",
    "label": "Full Name"
+  },
+  {
+   "default": "FDB-.feedback_type.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Naming Series"
   }
  ],
  "grid_page_length": 50,
  "links": [],
- "modified": "2026-05-11 17:16:48.310086",
+ "modified": "2026-05-12 09:12:29.378221",
  "modified_by": "Administrator",
  "module": "Feedback",
  "name": "Feedback",
