@@ -107,7 +107,7 @@
    "fieldtype": "Link",
    "in_standard_filter": 1,
    "label": "Organization",
-   "options": "Company"
+   "options": "National Society"
   },
   {
    "default": "FAQ-.category.-.#####",
@@ -120,7 +120,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-12 09:13:23.625611",
+ "modified": "2026-05-13 10:35:43.473684",
  "modified_by": "Administrator",
  "module": "FAQ",
  "name": "FAQ",
