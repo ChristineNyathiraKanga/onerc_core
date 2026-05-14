@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:naming_series",
+ "creation": "2026-05-14 15:17:52.263353",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "stakeholder_name",
+  "parent_organization",
+  "entity_type",
+  "classification",
+  "column_break_ddtp",
+  "status",
+  "abbreviation",
+  "country",
+  "website",
+  "individual_contact",
+  "section_break_thpm",
+  "contacts",
+  "areas_of_interest_section",
+  "interest_areas",
+  "geographic_focus_section",
+  "focus_countries",
+  "column_break_ztrx",
+  "regions"
+ ],
+ "fields": [
+  {
+   "fieldname": "stakeholder_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stakeholder Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "entity_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Entity Type",
+   "options": "Entity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "classification",
+   "fieldtype": "Table MultiSelect",
+   "label": "Classification",
+   "options": "Classification Selector",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nActive\nProspect\nInactive\nDo Not Approach",
+   "reqd": 1
+  },
+  {
+   "fieldname": "abbreviation",
+   "fieldtype": "Data",
+   "label": "Abbreviation"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "parent_organization",
+   "fieldtype": "Link",
+   "label": "Parent Organization",
+   "options": "Stakeholder"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
+  },
+  {
+   "depends_on": "eval: doc.entity_type == 'Individual'",
+   "fieldname": "individual_contact",
+   "fieldtype": "Link",
+   "label": "Individual Contact",
+   "options": "Contact"
+  },
+  {
+   "default": "SH.-.stakeholder_name._.entity_type._.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Naming Series"
+  },
+  {
+   "fieldname": "column_break_ddtp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_thpm",
+   "fieldtype": "Section Break",
+   "label": "Key Contacts"
+  },
+  {
+   "depends_on": "eval: doc.entity_type != 'Individual'",
+   "fieldname": "contacts",
+   "fieldtype": "Table",
+   "options": "Key Contacts"
+  },
+  {
+   "fieldname": "areas_of_interest_section",
+   "fieldtype": "Section Break",
+   "label": "Areas of Interest"
+  },
+  {
+   "fieldname": "interest_areas",
+   "fieldtype": "Table MultiSelect",
+   "label": "Interest Areas",
+   "options": "Interest Area Selector"
+  },
+  {
+   "fieldname": "geographic_focus_section",
+   "fieldtype": "Section Break",
+   "label": "Geographic Focus"
+  },
+  {
+   "fieldname": "focus_countries",
+   "fieldtype": "Table MultiSelect",
+   "label": "Countries",
+   "options": "Country Selector",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_ztrx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "regions",
+   "fieldtype": "Table MultiSelect",
+   "label": "Regions",
+   "options": "Region Selector"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-14 16:51:40.528596",
+ "modified_by": "Administrator",
+ "module": "Onerc Core",
+ "name": "Stakeholder",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "naming_series"
+}
