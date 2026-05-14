@@ -1,6 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
+ "autoname": "field:organization_name",
  "creation": "2026-03-26 08:47:59.492477",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -10,17 +10,22 @@
   "organization_short_name",
   "country",
   "column_break_opck",
+  "primary_language",
+  "secondary_languages",
+  "logo",
+  "address_section",
+  "official_website",
+  "telephone",
+  "column_break_ivti",
+  "physical_address",
+  "social_media_section",
+  "social_media",
+  "color_scheme_section",
   "primary_color",
   "secondary_color",
-  "logo",
-  "terminology_section",
-  "volunteer_label",
-  "member_label",
-  "column_break_vngp",
-  "branch_label",
-  "region_label",
-  "geography_section",
-  "maximum_geographical_depth"
+  "column_break_ysri",
+  "accent_color",
+  "background"
  ],
  "fields": [
   {
@@ -31,18 +36,24 @@
   {
    "fieldname": "organization_name",
    "fieldtype": "Data",
-   "label": "Organization Name"
+   "in_list_view": 1,
+   "label": "Organization Name",
+   "reqd": 1
   },
   {
    "fieldname": "organization_short_name",
    "fieldtype": "Data",
-   "label": "Organization Short Name"
+   "in_list_view": 1,
+   "label": "Organization Short Name",
+   "reqd": 1
   },
   {
    "fieldname": "country",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Country",
-   "options": "Country"
+   "options": "Country",
+   "reqd": 1
   },
   {
    "fieldname": "primary_color",
@@ -57,60 +68,94 @@
   {
    "fieldname": "logo",
    "fieldtype": "Attach Image",
-   "label": "Logo"
-  },
-  {
-   "fieldname": "terminology_section",
-   "fieldtype": "Section Break",
-   "label": "Terminology"
-  },
-  {
-   "fieldname": "volunteer_label",
-   "fieldtype": "Data",
-   "label": "Volunteer Label"
-  },
-  {
-   "fieldname": "member_label",
-   "fieldtype": "Data",
-   "label": "Member Label"
-  },
-  {
-   "fieldname": "branch_label",
-   "fieldtype": "Data",
-   "label": "Branch Label"
-  },
-  {
-   "fieldname": "region_label",
-   "fieldtype": "Data",
-   "label": "Region Label"
-  },
-  {
-   "fieldname": "geography_section",
-   "fieldtype": "Section Break",
-   "label": "Geography"
-  },
-  {
-   "fieldname": "maximum_geographical_depth",
-   "fieldtype": "Int",
-   "label": "Maximum Geo Depth"
+   "label": "Logo",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_opck",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_vngp",
+   "fieldname": "color_scheme_section",
+   "fieldtype": "Section Break",
+   "label": "Color Scheme"
+  },
+  {
+   "fieldname": "column_break_ysri",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "accent_color",
+   "fieldtype": "Color",
+   "label": "Accent Color"
+  },
+  {
+   "fieldname": "background",
+   "fieldtype": "Color",
+   "label": "Background"
+  },
+  {
+   "fieldname": "primary_language",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Primary Language",
+   "options": "Language",
+   "reqd": 1
+  },
+  {
+   "fieldname": "secondary_languages",
+   "fieldtype": "Table MultiSelect",
+   "label": "Secondary Languages",
+   "options": "Language link"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address"
+  },
+  {
+   "fieldname": "official_website",
+   "fieldtype": "Data",
+   "label": "Official Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "telephone",
+   "fieldtype": "Data",
+   "label": "Telephone"
+  },
+  {
+   "fieldname": "column_break_ivti",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "physical_address",
+   "fieldtype": "Small Text",
+   "label": "Physical Address"
+  },
+  {
+   "fieldname": "social_media_section",
+   "fieldtype": "Section Break",
+   "label": "Social Media "
+  },
+  {
+   "fieldname": "social_media",
+   "fieldtype": "Table",
+   "label": "Social Media",
+   "options": "Social Media Links"
   }
  ],
  "grid_page_length": 50,
+ "image_field": "logo",
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2026-04-19 12:15:44.387408",
+ "make_attachments_public": 1,
+ "modified": "2026-05-11 19:55:36.309291",
  "modified_by": "Administrator",
  "module": "Onerc Core",
  "name": "National Society Settings",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -127,8 +172,10 @@
  "quick_entry": 1,
  "row_format": "Dynamic",
  "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
  "sort_field": "creation",
  "sort_order": "DESC",
  "states": [],
+ "title_field": "organization_name",
  "track_changes": 1
 }

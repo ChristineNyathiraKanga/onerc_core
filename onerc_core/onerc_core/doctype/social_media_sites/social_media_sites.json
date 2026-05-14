@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:social_media_site",
+ "creation": "2026-05-11 19:48:14.856724",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "social_media_site",
+  "social_media_icon"
+ ],
+ "fields": [
+  {
+   "fieldname": "social_media_site",
+   "fieldtype": "Data",
+   "label": "Social Media Site",
+   "unique": 1
+  },
+  {
+   "fieldname": "social_media_icon",
+   "fieldtype": "Icon",
+   "label": "Social Media Icon"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-05-11 19:50:54.074816",
+ "modified_by": "Administrator",
+ "module": "Onerc Core",
+ "name": "Social Media Sites",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "social_media_site"
+}
