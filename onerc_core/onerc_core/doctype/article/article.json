@@ -72,8 +72,8 @@
    "fieldname": "article_type",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Article Type",
-   "options": "Article Type",
+   "label": "Localisation Type",
+   "options": "Localisation Type",
    "reqd": 1
   },
   {
@@ -81,7 +81,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Category",
-   "options": "Article Category",
+   "options": "Localisation Category",
    "reqd": 1
   },
   {
@@ -162,7 +162,7 @@
    "fieldname": "tags",
    "fieldtype": "Table MultiSelect",
    "label": "Tags",
-   "options": "Article Tag Link"
+   "options": "Localisation Tag Link"
   },
   {
    "fieldname": "section_publishing",

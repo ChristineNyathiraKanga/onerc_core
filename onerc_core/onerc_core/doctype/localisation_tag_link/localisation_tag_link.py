@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ArticleTagLink(Document):
+class LocalisationTagLink(Document):
 	pass

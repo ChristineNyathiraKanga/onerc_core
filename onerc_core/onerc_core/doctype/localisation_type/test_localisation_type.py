@@ -8,5 +8,5 @@ EXTRA_TEST_RECORD_DEPENDENCIES = []
 IGNORE_TEST_RECORD_DEPENDENCIES = []
 
 
-class IntegrationTestArticleType(IntegrationTestCase):
+class IntegrationTestLocalisationType(IntegrationTestCase):
 	pass

@@ -14,7 +14,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Tag",
-   "options": "Article Tag",
+   "options": "Localisation Tag",
    "reqd": 1
   }
  ],
@@ -25,7 +25,7 @@
  "modified": "2026-05-12 15:09:27.998527",
  "modified_by": "Administrator",
  "module": "Onerc Core",
- "name": "Article Tag Link",
+ "name": "Localisation Tag Link",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

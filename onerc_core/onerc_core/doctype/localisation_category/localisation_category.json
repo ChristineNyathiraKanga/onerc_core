@@ -1,22 +1,22 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:type_name",
- "creation": "2026-05-13 10:00:00.000000",
+ "autoname": "field:category_name",
+ "creation": "2026-05-12 15:17:56.167282",
  "default_view": "List",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "type_name",
+  "category_name",
   "description",
   "is_active"
  ],
  "fields": [
   {
-   "fieldname": "type_name",
+   "fieldname": "category_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Type Name",
+   "label": "Category Name",
    "reqd": 1,
    "unique": 1
   },
@@ -36,10 +36,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-13 10:00:00.000000",
+ "modified": "2026-05-12 15:17:56.167282",
  "modified_by": "Administrator",
  "module": "Onerc Core",
- "name": "Article Type",
+ "name": "Localisation Category",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
