@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestArticleCategory(IntegrationTestCase):
+class IntegrationTestLocalisationTag(IntegrationTestCase):
 	"""
-	Integration tests for ArticleCategory.
+	Integration tests for LocalisationTag.
 	Use this class for testing interactions between multiple components.
 	"""
 
