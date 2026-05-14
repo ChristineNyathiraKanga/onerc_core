@@ -14,6 +14,8 @@
   "subtitle",
   "article_type",
   "category",
+  "location",
+  "pillar",
   "section_content",
   "summary",
   "body",
@@ -83,6 +85,18 @@
    "label": "Category",
    "options": "Localisation Category",
    "reqd": 1
+  },
+  {
+   "description": "Geographic location for this article (e.g., Lusaka, Zambia)",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "pillar",
+   "fieldtype": "Select",
+   "label": "Pillar",
+   "options": "\nLeadership\nBranch Development\nResource Mobilisation\nFinance Development"
   },
   {
    "fieldname": "section_content",
