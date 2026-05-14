@@ -161,6 +161,14 @@ app_license = "mit"
 # 	],
 # }
 
+scheduler_events = {
+	"cron": {
+		"*/5 * * * *": [
+			"onerc_core.onerc_core.doctype.article.article.publish_scheduled_articles"
+		]
+	}
+}
+
 # Testing
 # -------
 
