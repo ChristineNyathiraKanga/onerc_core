@@ -13,16 +13,14 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Classification Name",
-   "options": "Classification",
-   "reqd": 1,
-   "unique": 1
+   "options": "Classification"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-05-14 17:29:40.396755",
+ "modified": "2026-05-15 09:32:05.961486",
  "modified_by": "Administrator",
  "module": "Onerc Core",
  "name": "Classification Selector",

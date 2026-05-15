@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestEntity(IntegrationTestCase):
+class IntegrationTestStakeholderEntity(IntegrationTestCase):
 	"""
-	Integration tests for Entity.
+	Integration tests for StakeholderEntity.
 	Use this class for testing interactions between multiple components.
 	"""
 
