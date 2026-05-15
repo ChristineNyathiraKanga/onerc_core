@@ -13,8 +13,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Classification Name",
-   "options": "Stakeholder Classification",
-   "unique": 1
+   "options": "Stakeholder Classification"
   }
  ],
  "grid_page_length": 50,
