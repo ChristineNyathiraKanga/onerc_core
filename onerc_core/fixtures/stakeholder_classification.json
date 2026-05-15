@@ -1,0 +1,44 @@
+[
+ {
+  "classification_name": "Government",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Stakeholder Classification",
+  "name": "Government"
+ },
+ {
+  "classification_name": "Private Sector",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Stakeholder Classification",
+  "name": "Private Sector"
+ },
+ {
+  "classification_name": "Donor",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Stakeholder Classification",
+  "name": "Donor"
+ },
+ {
+  "classification_name": "Peer Organization",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Stakeholder Classification",
+  "name": "Peer Organization"
+ },
+ {
+  "classification_name": "Implementing Partner",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Stakeholder Classification",
+  "name": "Implementing Partner"
+ },
+ {
+  "classification_name": "Potential Donor",
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Stakeholder Classification",
+  "name": "Potential Donor"
+ }
+]

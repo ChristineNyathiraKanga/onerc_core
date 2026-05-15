@@ -16,9 +16,7 @@
    "label": "Region Name",
    "oldfieldname": "country_name",
    "oldfieldtype": "Data",
-   "options": "Region",
-   "reqd": 1,
-   "unique": 1
+   "options": "Region"
   }
  ],
  "icon": "fa fa-globe",

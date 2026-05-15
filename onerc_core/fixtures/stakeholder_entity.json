@@ -1,0 +1,23 @@
+[
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Stakeholder Entity",
+  "entity_name": "Organisation",
+  "name": "Organisation"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Stakeholder Entity",
+  "entity_name": "Consortium",
+  "name": "Consortium"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Stakeholder Entity",
+  "entity_name": "Individual",
+  "name": "Individual"
+ }
+]

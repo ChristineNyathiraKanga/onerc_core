@@ -13,9 +13,9 @@ IGNORE_TEST_RECORD_DEPENDENCIES = []  # eg. ["User"]
 
 
 
-class IntegrationTestClassificationSelector(IntegrationTestCase):
+class IntegrationTestStakeholderClassification(IntegrationTestCase):
 	"""
-	Integration tests for ClassificationSelector.
+	Integration tests for StakeholderClassification.
 	Use this class for testing interactions between multiple components.
 	"""
 

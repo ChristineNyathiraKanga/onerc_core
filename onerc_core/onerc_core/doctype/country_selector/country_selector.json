@@ -14,8 +14,7 @@
    "fieldname": "country",
    "fieldtype": "Link",
    "label": "Country",
-   "options": "Country",
-   "unique": 1
+   "options": "Country"
   }
  ],
  "grid_page_length": 50,
