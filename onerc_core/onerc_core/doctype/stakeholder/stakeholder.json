@@ -46,7 +46,7 @@
    "fieldname": "classification",
    "fieldtype": "Table MultiSelect",
    "label": "Stakeholder Classification",
-   "options": "Classification Selector",
+   "options": "Stakeholder Classification Selector",
    "reqd": 1
   },
   {
@@ -139,7 +139,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-05-15 08:50:10.368731",
+ "modified": "2026-05-15 10:14:55.094635",
  "modified_by": "Administrator",
  "module": "Onerc Core",
  "name": "Stakeholder",

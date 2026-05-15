@@ -169,6 +169,39 @@ scheduler_events = {
 	}
 }
 
+fixtures = [
+	{
+		"dt": "Stakeholder Entity",
+		"filters": [
+			[
+				"entity_name",
+				"in",
+				[
+					"Organisation",
+					"Consortium",
+					"Individual",
+				],
+			]
+		],
+	},
+	{
+		"dt": "Stakeholder Classification",
+		"filters": [
+			[
+				"classification_name",
+				"in",
+				[
+					"Government",
+					"Private Sector",
+					"Donor",
+					"Peer Organization",	
+					"Implementing Partner",	
+					"Potential Donor",	
+				],
+			]
+		],
+	}
+]
 # Testing
 # -------
 
@@ -257,4 +290,3 @@ scheduler_events = {
 # ------------
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
-

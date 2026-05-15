@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class ClassificationSelector(Document):
+class StakeholderClassification(Document):
 	pass
